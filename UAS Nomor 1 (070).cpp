@@ -25,12 +25,10 @@ class edge
 
 };
 
-
 int main ()
 {
     int totalnode, node1, node2, w;
-    ifstream input ("test.txt");
-    //ofstream output ("test.txt");
+    ifstream input ("test.txt");	// untuk mengambil data dari file test.txt
     input >> totalnode;
     vector < list <edge> > adjlist (totalnode);
     while (input >> node1 >> node2 >> w)
@@ -50,9 +48,6 @@ int main ()
         }
         cout << endl;
         c++;
-
     }
-
-
     return 0;
 }
